@@ -142,9 +142,7 @@ docker scout cves giropops-redis:1.0
 
 Aplicação em execução:
 
-```md
 ![Screenshot](giro.png)
-```
 
 ---
 
