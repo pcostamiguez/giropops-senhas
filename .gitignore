@@ -1,0 +1,6 @@
+cosign.key 
+cosign.pub 
+Dockerfile.old
+venv/
+.venv/
+__pychache__/

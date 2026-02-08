@@ -1,0 +1,3 @@
+FROM cgr.dev/chainguard/redis 
+
+EXPOSE 6379

@@ -1,0 +1,21 @@
+services:
+  redis:
+    image: pcostamiguez/redis-distroless:1.0
+    container_name: redis-service
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+
+  app:
+    image: pcostamiguez/giropops-senhas:1.0 
+    container_name: giropops-senhas
+    ports:
+      - "80:5000"
+    environment:
+      - REDIS_HOST=redis-service
+    depends_on:
+      - redis
+
+volumes:
+  redis-data:
